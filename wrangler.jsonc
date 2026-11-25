@@ -1,8 +1,11 @@
 {
   // Cloudflare Workers con assets estáticos: sirve el HTML único de dist/.
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "notificaciones-comercial",
+  // Debe coincidir con el nombre del Worker en Cloudflare (al importar el repo, Cloudflare usa este).
+  "name": "notificacionescomercial",
   "compatibility_date": "2026-11-01",
+  // wrangler compila antes de publicar: funciona aunque el panel no tenga «Build command».
+  "build": { "command": "npm run build" },
   "assets": {
     "directory": "./dist",
     "not_found_handling": "single-page-application"

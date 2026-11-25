@@ -25,10 +25,10 @@ Configura dos secretos en GitHub (*Settings → Secrets and variables → Action
 | `CLOUDFLARE_ACCOUNT_ID` | Cloudflare → *Workers & Pages* (columna derecha, «Account ID») |
 
 Mientras no existan los secretos, el workflow solo prueba y compila (no falla).
-La URL queda como `https://notificaciones-comercial.<tu-subdominio>.workers.dev`.
+La URL queda como `https://notificacionescomercial.<tu-subdominio>.workers.dev`.
 
 ### Opción B · Integración Git del panel de Cloudflare (sin secretos)
-*Workers & Pages → Create → Import a repository* → este repo. Build command: `npm run build` · Deploy command: `npx wrangler deploy`.
+*Workers & Pages → Create → Import a repository* → este repo. Deploy command: `npx wrangler deploy` (compila solo; el «Build command» puede ir vacío o con `npm run build`). El nombre del Worker debe ser `notificacionescomercial`, igual que en `wrangler.jsonc`.
 Si usas esta opción, no configures los secretos de la opción A (para no publicar dos veces).
 
 ### Manual desde tu computadora
