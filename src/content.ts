@@ -58,7 +58,7 @@ export const slides = {
   cover: {
     nav: 'Portada',
     label: 'SESIÓN DE ALINEACIÓN · COMERCIAL',
-    title: 'Radiografía de correos',
+    title: 'Estrategia de notificaciones',
     subtitle:
       'De lo que hoy recibe el aprendedor a lo que va a vivir: qué cambia para Comercial.',
     footer: 'Journeys y Experiencia · VPAF · Noviembre 2026',
